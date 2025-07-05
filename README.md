@@ -1,5 +1,5 @@
 # rtl8188eus
-This is the updated and error free driver for TP-link wn772n v2/3 wifi adapter.
+This repo contains a driver for RTL8188EUS which is used with the 2.4 GHz TP-Link TL-WN725N USB Wireless Adapter. This driver was tested on Rockchip RK3588.
 
 # Steps to install this driver on your linux machine. Plug in the adapter first.
 1. `sudo apt update`
