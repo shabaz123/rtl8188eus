@@ -1,7 +1,9 @@
 # rtl8188eus
 This repo was forked from Munazirul/rtl8188eus and modified so it would build on Rockchip RK3588 running Ubuntu. This repo contains a driver for RTL8188EUS which is used with the 2.4 GHz TP-Link TL-WN725N USB Wireless Adapter. This fork has not been tested on any other hardware.
 
-# Steps to install this driver on your linux machine. Plug in the adapter first, and ensure you have an Ethernet cable connected between compute board and your home switch/router, because steps 1-3 require Internet access.
+# Steps to install this driver on your linux machine
+
+Plug in the adapter first, and ensure you have an Ethernet cable connected between compute board and your home switch/router, because steps 1-3 require Internet access.
 
 First off, type **ping www.bbc.co.uk** and see that you get successful ping responses. If you don't get that, then there's an issue with the wired Ethernet connection.
 
@@ -18,16 +20,16 @@ If you're successful, then press **Ctrl-C** to stop the pinging, and then contin
 9. `sudo reboot` (must)
 10. `sudo modprobe 8188eu` (Only if the wifi networks are not shown on your machine)
 
-Hardware Check:
+# Hardware Check
 
 With the TL-WN725N USB adapter inserted, power up your machine. Type **lsusb** and you should see a line indicating that a USB device containing RTL8188EUS is inserted. If you don't see that, then either there is an issue with the USB adapter, or you've got a different USB adapter.
 
 
-Driver Check:
+# Driver Check
 
 Type **ifconfig -a** and you should see the interfaces listed, and one will be called something like wlxxxxxxxxxxxxx. If you don't see that, then the driver installation was not successful for some reason.
 
-Using the Driver:
+# Using the Driver
 
 Type **nmcli radio wifi** and the output should indicate 'enabled'. Next, type **nmcli radio wifi on** and then after a few seconds, type **nmcli dev wifi list** to see a list of SSIDs. 
 
@@ -37,7 +39,7 @@ To connect to an SSID, type the following:
 
 where MY_SSID is the SSID name, and MY_PASSWORD is the password (enclose it in speech-marks) as shown above.
 
-Check you are Connected to a Wireless Network:
+# Check you are connected to a Wireless Network
 
 Type **ifconfig -a** and at the wlxxxxxxxxxxxxx entry, in the second line, you should see an IP address, such as:
 
