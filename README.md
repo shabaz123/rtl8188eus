@@ -19,13 +19,12 @@ If you're successful, then press **Ctrl-C** to stop the pinging, and then contin
 6. `sudo sh -c 'echo "blacklist 8188eu.ko" >> /etc/modprobe.d/realtek.conf'`
 7. `sudo make`
 8. `sudo make install`
-9. `sudo reboot` (must)
+9. `sudo reboot`
 10. `sudo modprobe 8188eu` (Only if the wifi networks are not shown on your machine)
 
 # Hardware Check
 
-With the TL-WN725N USB adapter inserted, power up your machine. Type **lsusb** and you should see a line indicating that a USB device containing RTL8188EUS is inserted. If you don't see that, then either there is an issue with the USB adapter, or you've got a different USB adapter.
-
+With the TL-WN725N USB adapter inserted, power up your machine if you have not already done so. Type **lsusb** and you should see a line indicating that a USB device containing RTL8188EUS is inserted. If you don't see that, then either there is an issue with the USB adapter, or you've got a different USB adapter than expected.
 
 # Driver Check
 
