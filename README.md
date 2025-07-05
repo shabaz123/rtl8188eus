@@ -20,7 +20,7 @@ If you're successful, then press **Ctrl-C** to stop the pinging, and then contin
 7. `sudo make`
 8. `sudo make install`
 9. `sudo reboot`
-10. `sudo modprobe 8188eu` (Only if the wifi networks are not shown on your machine)
+
 
 # Hardware Check
 
