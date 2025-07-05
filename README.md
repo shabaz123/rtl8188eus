@@ -1,5 +1,5 @@
 # rtl8188eus
-This repo contains a driver for RTL8188EUS which is used with the 2.4 GHz TP-Link TL-WN725N USB Wireless Adapter. This driver was tested on Rockchip RK3588.
+This repo was forked from Munazirul/rtl8188eus and modified so it would build on Rockchip RK3588 running Ubuntu. This repo contains a driver for RTL8188EUS which is used with the 2.4 GHz TP-Link TL-WN725N USB Wireless Adapter. This fork has not been tested on any other hardware.
 
 # Steps to install this driver on your linux machine. Plug in the adapter first.
 1. `sudo apt update`
