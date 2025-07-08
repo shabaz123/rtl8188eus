@@ -32,7 +32,7 @@ Type **ifconfig -a** and you should see the interfaces listed, and one will be c
 
 # Using the Driver
 
-Type **nmcli radio wifi** and the output should indicate 'enabled'. Next, type **nmcli radio wifi on** and then after a few seconds, type **nmcli dev wifi list** to see a list of SSIDs. 
+Type **nmcli radio wifi** and the output should indicate 'enabled'. Next, type **sudo nmcli radio wifi on** and then after a few seconds, type **nmcli dev wifi list** to see a list of SSIDs. 
 
 To connect to an SSID, type the following:
 
